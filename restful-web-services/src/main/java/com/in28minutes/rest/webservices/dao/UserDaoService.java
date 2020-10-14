@@ -20,7 +20,7 @@ public class UserDaoService {
 		users.add(new User(3, "Jack", new Date()));
 	}
 
-	public List<User> getUsers() {
+	public List<User> findAll() {
 		return users;
 	}
 
