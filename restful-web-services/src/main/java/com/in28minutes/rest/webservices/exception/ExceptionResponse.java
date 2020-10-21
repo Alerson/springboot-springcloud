@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices.bean;
+package com.in28minutes.rest.webservices.exception;
 
 import java.util.Date;
 
@@ -11,10 +11,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-
-	private Integer id;
-	private String name;
-	private Date birthDate;
-
+public class ExceptionResponse {
+	private Date timestamp;
+	private String message;
+	private String details;
 }
